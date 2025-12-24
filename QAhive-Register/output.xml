@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.10.11 on win32)" generated="2025-12-24T11:42:10.357321" rpa="false" schemaversion="5">
+<suite id="s1" name="Register" source="c:\Users\User\OneDrive\เดสก์ท็อป\QAhive_register\Features\register.robot">
+<test id="s1-t1" name="Register New Account" line="9">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-12-24T11:42:11.452990" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-12-24T11:42:11.452990" elapsed="0.005777"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:11.458767" level="INFO">https://web-demo.qahive.com/e-commerce/register</msg>
+<arg>${REGISTER_URL}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2025-12-24T11:42:11.458767" elapsed="8.023893"/>
+</kw>
+<kw name="Click Button" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:19.484658" level="INFO">Clicking button 'css=[data-testid="loginLink"]'.</msg>
+<arg>css=[data-testid="loginLink"]</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T11:42:19.483659" elapsed="0.496143"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:19.980802" level="INFO">Typing text 'Test1216@email.com' into text field 'css=input[data-testid="email"]'.</msg>
+<arg>css=input[data-testid="email"]</arg>
+<arg>Test1216@email.com</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T11:42:19.980802" elapsed="0.534393"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:20.521286" level="INFO">Typing text 'Test12345' into text field 'css=input[data-testid="password"]'.</msg>
+<arg>css=input[data-testid="password"]</arg>
+<arg>Test12345</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T11:42:20.521286" elapsed="0.172697"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:20.695980" level="INFO">Typing text 'TestUser' into text field 'css=input[data-testid="name"]'.</msg>
+<arg>css=input[data-testid="name"]</arg>
+<arg>TestUser</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T11:42:20.695980" elapsed="0.144328"/>
+</kw>
+<kw name="Click Element" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:20.841305" level="INFO">Clicking element 'css=input[data-testid="female"]'.</msg>
+<arg>css=input[data-testid="female"]</arg>
+<doc>Clicks element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T11:42:20.841305" elapsed="0.049487"/>
+</kw>
+<kw name="Click Button" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:20.892785" level="INFO">Clicking button 'css=[data-testid="submit"]'.</msg>
+<arg>css=[data-testid="submit"]</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T11:42:20.891781" elapsed="0.065960"/>
+</kw>
+<kw name="Click Button" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:20.958735" level="INFO">Clicking button 'css=[data-testid="submit"]'.</msg>
+<arg>css=[data-testid="submit"]</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-24T11:42:20.958735" elapsed="0.583163"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2025-12-24T11:42:29.025252" level="FAIL">Target page, context or browser has been closed</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2025-12-24T11:42:28.910131" elapsed="0.157298">Target page, context or browser has been closed</status>
+</kw>
+<msg time="2025-12-24T11:42:29.067429" level="FAIL">Target closed
+=========================== logs ===========================
+waiting for selector "//*[contains(., 'dashboard')]" to be visible
+============================================================</msg>
+<arg>dashboard</arg>
+<doc>Waits until ``text`` appears on current page.</doc>
+<status status="FAIL" start="2025-12-24T11:42:21.542898" elapsed="7.524531">Target closed
+=========================== logs ===========================
+waiting for selector "//*[contains(., 'dashboard')]" to be visible
+============================================================</status>
+</kw>
+<status status="FAIL" start="2025-12-24T11:42:11.452990" elapsed="17.614439">Target closed
+=========================== logs ===========================
+waiting for selector "//*[contains(., 'dashboard')]" to be visible
+============================================================</status>
+</test>
+<status status="FAIL" start="2025-12-24T11:42:10.364314" elapsed="18.703115"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register" id="s1" pass="0" fail="1" skip="0">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
