@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.10.11 on win32)" generated="2025-07-17T14:07:40.281056" rpa="false" schemaversion="5">
+<suite id="s1" name="Register" source="c:\Users\User\Downloads\rfp-test-project-page-object\rfp-test-project\Features\QAhiveTest\register.robot">
+<test id="s1-t1" name="Register New Account" line="9">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-07-17T14:07:41.147404" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-07-17T14:07:41.147404" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:41.147404" level="INFO">https://web-demo.qahive.com/e-commerce/register</msg>
+<arg>${REGISTER_URL}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2025-07-17T14:07:41.147404" elapsed="6.956227"/>
+</kw>
+<kw name="Click Button" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:48.105631" level="INFO">Clicking button 'css=[data-testid="loginLink"]'.</msg>
+<arg>css=[data-testid="loginLink"]</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T14:07:48.104629" elapsed="0.430869"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:48.536498" level="INFO">Typing text 'Test1216@email.com' into text field 'css=input[data-testid="email"]'.</msg>
+<arg>css=input[data-testid="email"]</arg>
+<arg>Test1216@email.com</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T14:07:48.536498" elapsed="0.526900"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:49.065398" level="INFO">Typing text 'Test12345' into text field 'css=input[data-testid="password"]'.</msg>
+<arg>css=input[data-testid="password"]</arg>
+<arg>Test12345</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T14:07:49.065398" elapsed="0.173998"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:49.240394" level="INFO">Typing text 'TestUser' into text field 'css=input[data-testid="name"]'.</msg>
+<arg>css=input[data-testid="name"]</arg>
+<arg>TestUser</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T14:07:49.240394" elapsed="0.142615"/>
+</kw>
+<kw name="Click Element" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:49.385008" level="INFO">Clicking element 'css=input[data-testid="female"]'.</msg>
+<arg>css=input[data-testid="female"]</arg>
+<doc>Clicks element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T14:07:49.384009" elapsed="0.053891"/>
+</kw>
+<kw name="Click Button" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:49.438900" level="INFO">Clicking button 'css=[data-testid="submit"]'.</msg>
+<arg>css=[data-testid="submit"]</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T14:07:49.437900" elapsed="0.063846"/>
+</kw>
+<kw name="Click Button" owner="PuppeteerLibrary">
+<msg time="2025-07-17T14:07:49.503667" level="INFO">Clicking button 'css=[data-testid="submit"]'.</msg>
+<arg>css=[data-testid="submit"]</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T14:07:49.502669" elapsed="1.304686"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="PuppeteerLibrary">
+<arg>dashboard</arg>
+<doc>Waits until ``text`` appears on current page.</doc>
+<status status="PASS" start="2025-07-17T14:07:50.808355" elapsed="3.019724"/>
+</kw>
+<status status="PASS" start="2025-07-17T14:07:41.147404" elapsed="12.681677"/>
+</test>
+<status status="PASS" start="2025-07-17T14:07:40.287149" elapsed="13.542933"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register" id="s1" pass="1" fail="0" skip="0">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
